@@ -5,13 +5,17 @@ Fresh Music controls music on **YouTube and YouTube Music** in Chrome and Opera.
 
 ## Install
 
-[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.8)](releases/0.2.8/FreshMusicDesktopSetup.exe)
+[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.9)](releases/0.2.9/FreshMusicDesktopSetup.exe)
 
 1. Close the separate Fresh Music Windows panels.
 2. Run the installer and choose Install / Update. Existing browser connections are preserved.
 3. Reload Fresh Music in the browser, refresh YouTube tabs, and reopen the panel.
 
 The optional helper needs Microsoft WebView2 Runtime. The installer does not download that runtime automatically.
+
+## Version 0.2.9
+
+Fixes remote mute toggling back when the page audio guard applies the preference synchronously across extension/page worlds. The requested mute state is captured once before dispatch. Mute/unmute preserves the chosen volume, including zero.
 
 ## Version 0.2.8
 
