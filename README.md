@@ -5,13 +5,17 @@ Fresh Music controls music on **YouTube and YouTube Music** in Chrome and Opera.
 
 ## Install
 
-[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.7)](releases/0.2.7/FreshMusicDesktopSetup.exe)
+[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.8)](releases/0.2.8/FreshMusicDesktopSetup.exe)
 
 1. Close the separate Fresh Music Windows panels.
 2. Run the installer and choose Install / Update. Existing browser connections are preserved.
 3. Reload Fresh Music in the browser, refresh YouTube tabs, and reopen the panel.
 
 The optional helper needs Microsoft WebView2 Runtime. The installer does not download that runtime automatically.
+
+## Version 0.2.8
+
+Fixes playlist selection when a playlist page retains an old player or a watch page is still loading a different video. The selected video and playlist are checked before playing; stale panel refreshes cannot overwrite the selection. Loading may be dismissed and playback errors stay readable. Standalone YouTube/Music tabs form a temporary Open tracks queue: browse it without playback, then select the exact song. Favorites and saved lists remain unchanged.
 
 ## Version 0.2.7
 
