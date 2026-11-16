@@ -5,13 +5,21 @@ Fresh Music controls music on **YouTube and YouTube Music** in Chrome and Opera.
 
 ## Install
 
-[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.11)](releases/0.2.11/FreshMusicDesktopSetup.exe)
+[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.12)](releases/0.2.12/FreshMusicDesktopSetup.exe)
 
 1. Close the separate Fresh Music Windows panels.
 2. Run the installer and choose Install / Update. Existing browser connections are preserved.
 3. Reload Fresh Music in the browser, refresh YouTube tabs, and reopen the panel.
 
 The optional helper needs Microsoft WebView2 Runtime. The installer does not download that runtime automatically.
+
+## Version 0.2.12
+
+Selecting a playlist automatically resumes its last saved track. Playback seconds are not stored or restored. There is no question popup or extra Resume button on the panel. Automatic continuation and remembering can be disabled in extension settings (Last playlist track).
+
+An explicitly selected song takes priority. Previous/Next keep moving normally. Blacklisted tracks are excluded, except inside the explicitly enabled Blacklist playlist. Disabled continuation stays disabled when updating. This replaces the passive Resume button introduced in 0.2.11.
+
+Includes 0.2.11 background-only tab recovery, white selected heart/Like/Dislike icons and direct original-video requests without our automatic confirmation popup. Genuine browser autoplay/Picture-in-Picture activation restrictions still apply.
 
 ## Version 0.2.11
 
