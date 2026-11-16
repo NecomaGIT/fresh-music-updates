@@ -5,13 +5,19 @@ Fresh Music controls music on **YouTube and YouTube Music** in Chrome and Opera.
 
 ## Install
 
-[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.9)](releases/0.2.9/FreshMusicDesktopSetup.exe)
+[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.10)](releases/0.2.10/FreshMusicDesktopSetup.exe)
 
 1. Close the separate Fresh Music Windows panels.
 2. Run the installer and choose Install / Update. Existing browser connections are preserved.
 3. Reload Fresh Music in the browser, refresh YouTube tabs, and reopen the panel.
 
 The optional helper needs Microsoft WebView2 Runtime. The installer does not download that runtime automatically.
+
+## Version 0.2.10
+
+Open tracks is always the first chooser entry. The Open in browser section can be collapsed; the preference is remembered without changing the New/All track filter.
+
+Playback commands keep a fast path for ready tabs. When a selected YouTube tab is asleep or its receiver is outdated, an explicit playback request can activate that tab/window, wait for readiness, reload that tab once if necessary, and retry playback once. No idle recovery timer, preloading of all tabs or changes to memory-saving settings. On modern browsers, playlist reads exclude stored watch-history values.
 
 ## Version 0.2.9
 
