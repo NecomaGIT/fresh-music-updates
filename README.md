@@ -5,13 +5,21 @@ Fresh Music controls music on **YouTube and YouTube Music** in Chrome and Opera.
 
 ## Install
 
-[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.13)](releases/0.2.13/FreshMusicDesktopSetup.exe)
+[Download FreshMusicDesktopSetup.exe (Windows x64, 0.2.14)](releases/0.2.14/FreshMusicDesktopSetup.exe)
 
 1. Close the separate Fresh Music Windows panels.
 2. Run the installer and choose Install / Update. Existing browser connections are preserved.
 3. Reload Fresh Music in the browser, refresh YouTube tabs, and reopen the panel.
 
 The optional helper needs Microsoft WebView2 Runtime. The installer does not download that runtime automatically.
+
+## Version 0.2.14
+
+Updates the shared panel to follow the latest actually playing source during use, with a matching vector chevron for Open in browser. Extension 1.12.0.17 includes fixes for manual YouTube navigation, stale personal queues and completing explicit track navigation with playback.
+
+The extension now requires the owner-approved debugger permission for temporary, scoped control of a selected YouTube/Music tab. Explicit playback and camera requests can be forwarded without focusing the browser or opening our confirmation popup. Chrome/Opera may show their standard debugging notice during the short connection; this notice is not hidden. Grant the new extension permission yourself when the browser requests it. The helper update does not grant browser permissions.
+
+Repeated original-video opening and playback passed with the actual extension debugger API in isolated Opera, and with the underlying CDP media operations in isolated Chrome/Opera. A full discarded-tab test in the automated Opera profile did not complete; actual discarded-tab behavior and the personal profile still need validation after enabling the extension update. This is a test release, not a guarantee for unavailable, protected or offline videos or conflicts with DevTools.
 
 ## Version 0.2.13
 
